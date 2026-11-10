@@ -1,0 +1,81 @@
+/* Interactive staff attendance calendars */
+.calendar .calendar-day {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 34px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: #56675d;
+    font: 600 12px 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background .16s ease, color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+
+.calendar .calendar-day:hover { background: #edf5eb; transform: translateY(-1px); }
+.calendar .calendar-day.marked { background: #e0f1e2; color: #07583b; font-weight: 800; }
+.calendar .calendar-day.in-progress { background: #fff1cf; color: #805b11; }
+.calendar .calendar-day.today { border-color: var(--green2); }
+.calendar .calendar-day.selected { box-shadow: 0 0 0 2px #d8b44d; }
+.calendar .calendar-day i { position: absolute; bottom: 3px; width: 4px; height: 4px; border-radius: 50%; background: currentColor; }
+.calendar .calendar-day.today.marked { background: var(--green2); color: #fff; }
+.calendar .calendar-day.today.in-progress { background: #f2c85e; color: #4d3a12; }
+.calendar-day-detail { margin-top: 15px; padding: 13px 14px; border: 1px solid #e2eddf; border-radius: 10px; background: #f7faf5; }
+.calendar-day-detail h3 { margin: 0 0 10px; color: var(--green); font-size: 12px; }
+.calendar-detail-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.calendar-detail-grid p { display: flex; flex-direction: column; gap: 4px; min-width: 0; margin: 0; }
+.calendar-detail-grid span { color: var(--muted); font-size: 9px; }
+.calendar-detail-grid b { overflow-wrap: anywhere; color: var(--ink); font-size: 11px; }
+.attendance-pay-note { margin: 10px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.attendance-empty { padding: 18px 12px !important; color: var(--muted); text-align: center; }
+@media(max-width:600px) {
+    .calendar-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .calendar-arrows { flex-wrap: nowrap; gap: 3px; }
+    .calendar-arrows b { min-width: 95px; text-align: center; }
+}
+
+@media(max-width:400px) {
+
+    .brand-divider,
+    .product-name {
+        display: none
+    }
+
+    .hero-copy {
+        padding: 23px
+    }
+
+    .hero h1 {
+        font-size: 44px
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .product-photo {
+        height: 100px
+    }
+
+    .filters {
+        flex-wrap: wrap
+    }
+
+    .calendar-arrows {
+        gap: 4px
+    }
+
+    .calendar-arrows b {
+        font-size: 9px
+    }
+
+    .panel {
+        padding: 13px 10px
+    }
+}
+
+:root {}
+

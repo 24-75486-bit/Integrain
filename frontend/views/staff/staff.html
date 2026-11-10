@@ -1,0 +1,315 @@
+<section class="page" id="staff-page" data-view="staff">
+  <div class="portal-shell">
+    <button class="sidebar-toggle" type="button" aria-label="Hide sidebar" aria-expanded="true">&#8249;</button>
+    <aside class="sidebar"><a class="side-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg
+            viewBox="0 0 64 64" focusable="false">
+            <path
+              d="M31 53V16m0 13c-8 0-13-5-14-12 8 0 13 4 14 12Zm0 8c8 0 13-5 14-12-8 0-13 4-14 12Zm0-20c-6-1-9-5-9-11 6 1 9 5 9 11Zm0-5c6-2 9-6 8-12-6 2-9 6-8 12ZM21 54h22" />
+          </svg></span><span>Jun &amp;
+          Bebot's<small>RICE RETAILER</small></span></a>
+      <p class="side-label">STAFF PORTAL</p>
+      <button class="side-link selected" data-staff="overview"><svg class="nav-icon">
+          <use href="#icon-dashboard" xlink:href="#icon-dashboard" />
+        </svg><span>Dashboard</span></button><button class="side-link" data-staff="transactions"><svg class="nav-icon">
+          <use href="#icon-transactions" xlink:href="#icon-transactions" />
+        </svg><span>Transactions</span></button><button class="side-link" data-staff="attendance"><svg class="nav-icon">
+          <use href="#icon-clock" xlink:href="#icon-clock" />
+        </svg><span>Attendance</span></button><button class="side-link" data-staff="salary"><svg class="nav-icon">
+          <use href="#icon-wallet" xlink:href="#icon-wallet" />
+        </svg>
+        <span>Salary</span></button>
+      <div class="account-menu" data-account-panel hidden>
+        <p class="account-email" data-account-email></p>
+        <button type="button" class="account-menu-item" data-settings-open><span aria-hidden="true">⚙</span>Settings</button>
+        <button type="button" class="account-menu-item account-logout" data-logout><span aria-hidden="true">↪</span>Log out</button>
+      </div>
+      <button class="sidebar-profile" type="button" data-account-toggle data-profile-role="staff" aria-expanded="false"><span class="sidebar-avatar"
+          data-profile-initials>MR</span><span class="sidebar-user-copy"><strong data-profile-name>Maria
+            Reyes</strong><small data-profile-title>Staff</small></span><span class="account-chevron" aria-hidden="true">⌃</span></button>
+    </aside>
+    <div class="portal-content">
+      <div class="portal-heading">
+        <div><span class="eyebrow">Tuesday, October 4, 2026</span>
+          <h1 id="staff-heading">Good morning, Maria <span>&#9728;</span></h1>
+          <p id="staff-subheading">Here's your personal overview.</p>
+        </div><button class="avatar">MR</button>
+      </div>
+      <section class="staff-view" data-staff-view="overview">
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-icon green">&#10003;</div>
+            <div><small>Attendance today</small><strong id="staff-today-status">No record</strong><em
+                id="staff-today-time">No time entry today</em></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon blue">&#8369;</div>
+            <div><small>Estimated pay</small><strong id="staff-total-earned-pay">&#8369;0.00</strong><em>This month,
+                based on attendance</em></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon orange">&#9633;</div>
+            <div><small>Pending requests</small><strong id="staff-pending">1</strong><em><a href="#"
+                  data-staff="salary">View details &#8594;</a></em></div>
+          </article>
+        </div>
+        <div class="staff-columns">
+          <article class="panel calendar-panel">
+            <div class="panel-title">
+              <div>
+                <h2>My Attendance</h2>
+                <p>Tap a date to view your time and hours.</p>
+              </div>
+              <div class="calendar-arrows"><button id="prev-month" aria-label="Previous month">&#8249;</button><b
+                  id="month-label">September 2026</b><button id="next-month" aria-label="Next month">&#8250;</button>
+              </div>
+            </div>
+            <div class="calendar" id="calendar"></div>
+            <div class="legend"><span><i class="present-dot"></i> Present</span><span><i class="absent-dot"></i>
+                No record</span></div>
+            <div class="calendar-day-detail">
+              <h3 id="overview-selected-date">Select a date</h3>
+              <div class="calendar-detail-grid">
+                <p><span>Time in</span><b id="overview-time-in">—</b></p>
+                <p><span>Time out</span><b id="overview-time-out">—</b></p>
+                <p><span>Hours</span><b id="overview-hours">—</b></p>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-title">
+              <div>
+                <h2>Recent Transactions</h2>
+                <p>Your latest pay activity</p>
+              </div><button class="icon-button" aria-label="More">&#8942;</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="row-dot green-dot"></i> Salary</td>
+                    <td>&#8369; 12,000</td>
+                    <td>09/12/2026</td>
+                  </tr>
+                  <tr>
+                    <td><i class="row-dot blue-dot"></i> Bonus</td>
+                    <td>&#8369; 1,000</td>
+                    <td>09/10/2026</td>
+                  </tr>
+                  <tr>
+                    <td><i class="row-dot red-dot"></i> Deduction</td>
+                    <td>&#8369; 500</td>
+                    <td>09/08/2026</td>
+                  </tr>
+                  <tr>
+                    <td><i class="row-dot green-dot"></i> Salary</td>
+                    <td>&#8369; 12,000</td>
+                    <td>09/05/2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          <article class="panel request-panel">
+            <div class="panel-title">
+              <div>
+                <h2>Salary Request</h2>
+                <p>Need an advance or salary?</p>
+              </div>
+            </div>
+            <p>Submit your request and we'll process it as soon as possible.</p><button class="button full"
+              type="button" data-staff="salary">Request advance</button>
+            <div class="salary-details">
+              <h3>Your salary details</h3>
+              <p><span>Basic salary</span><b>&#8369; 12,000</b></p>
+              <p><span>Allowance</span><b>&#8369; 2,000</b></p>
+              <p class="net"><span>Last net pay</span><b>&#8369; 14,000</b></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="staff-view" data-staff-view="transactions" hidden>
+        <article class="panel staff-page-panel">
+          <div class="panel-title">
+            <div>
+              <h2>My Transactions</h2>
+              <p>Summary of recorded salary, bonuses, and deductions.</p>
+            </div><span class="status-pill status-paid">4 records</span>
+          </div>
+          <div class="table-wrap">
+            <table class="staff-data-table">
+              <thead>
+                <tr>
+                  <th>Transaction</th>
+                  <th>Details</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="row-dot green-dot"></i> Salary</td>
+                  <td>September payroll</td>
+                  <td>09/12/2026</td>
+                  <td class="amount-positive">₱ 12,000</td>
+                  <td><span class="status-pill status-paid">Paid</span></td>
+                </tr>
+                <tr>
+                  <td><i class="row-dot blue-dot"></i> Bonus</td>
+                  <td>Attendance incentive</td>
+                  <td>09/10/2026</td>
+                  <td class="amount-positive">₱ 1,000</td>
+                  <td><span class="status-pill status-paid">Paid</span></td>
+                </tr>
+                <tr>
+                  <td><i class="row-dot red-dot"></i> Deduction</td>
+                  <td>Salary advance</td>
+                  <td>09/08/2026</td>
+                  <td class="amount-negative">− ₱ 500</td>
+                  <td><span class="status-pill status-complete">Applied</span></td>
+                </tr>
+                <tr>
+                  <td><i class="row-dot green-dot"></i> Salary</td>
+                  <td>August payroll</td>
+                  <td>09/05/2026</td>
+                  <td class="amount-positive">₱ 12,000</td>
+                  <td><span class="status-pill status-paid">Paid</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="data-note">Only demo records are shown here.</p>
+        </article>
+      </section>
+
+      <section class="staff-view" data-staff-view="attendance" hidden>
+        <div class="stats-grid staff-attendance-stats">
+          <article class="stat-card">
+            <div class="stat-icon green">✓</div>
+            <div><small>Present this month</small><strong id="attendance-present-count">0 days</strong><em>Based on
+                time-in records</em></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon orange">◷</div>
+            <div><small>Total hours worked</small><strong id="attendance-hours-count">0h</strong><em>This month</em>
+            </div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon blue">%</div>
+            <div><small>Estimated earned pay</small><strong id="attendance-earned-pay">₱0.00</strong><em>Based on
+                recorded hours</em></div>
+          </article>
+        </div>
+        <article class="panel calendar-panel staff-attendance-panel">
+          <div class="panel-title">
+            <div>
+              <h2>Attendance Calendar</h2>
+              <p>Track your attendance this month.</p>
+            </div>
+            <div class="calendar-arrows"><button type="button" id="attendance-prev-month"
+                aria-label="Previous month">&#8249;</button><b id="attendance-month-label"></b><button type="button"
+                id="attendance-next-month" aria-label="Next month">&#8250;</button></div>
+          </div>
+          <div class="calendar" id="attendance-calendar" aria-label="Interactive attendance calendar"></div>
+          <div class="legend"><span><i class="present-dot"></i> Present</span><span><i class="absent-dot"></i>
+              No record</span></div>
+          <div class="calendar-day-detail">
+            <h3 id="attendance-selected-date">Select a date</h3>
+            <div class="calendar-detail-grid">
+              <p><span>Time in</span><b id="attendance-time-in">—</b></p>
+              <p><span>Time out</span><b id="attendance-time-out">—</b></p>
+              <p><span>Hours worked</span><b id="attendance-selected-hours">—</b></p>
+              <p><span>Estimated pay</span><b id="attendance-selected-pay">—</b></p>
+            </div>
+          </div>
+          <p class="attendance-pay-note">Estimated hourly rate: ₱12,000 monthly basic salary ÷ 22 workdays ÷ 8 hours
+            = ₱68.18 per hour.</p>
+        </article>
+        <article class="panel staff-page-panel attendance-log">
+          <div class="panel-title">
+            <div>
+              <h2>Recent attendance</h2>
+              <p>Your recorded time-in and time-out entries for this month.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="staff-data-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Time in</th>
+                  <th>Time out</th>
+                  <th>Hours</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="staff-attendance-log"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="staff-view" data-staff-view="salary" hidden>
+        <div class="stats-grid staff-salary-stats">
+          <article class="stat-card">
+            <div class="stat-icon green">₱</div>
+            <div><small>Basic monthly salary</small><strong>₱ 12,000</strong><em>Regular pay</em></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon blue">+</div>
+            <div><small>Allowance</small><strong>₱ 2,000</strong><em>Monthly allowance</em></div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-icon violet">₱</div>
+            <div><small>Estimated earned pay</small><strong id="staff-earned-pay">&#8369;0.00</strong><em>This
+                month, based on attendance</em></div>
+          </article>
+        </div>
+        <div class="staff-salary-layout">
+          <article class="panel staff-page-panel">
+            <div class="panel-title">
+              <div>
+                <h2>Salary breakdown</h2>
+                <p>Estimated pay based on recorded attendance</p>
+              </div><span class="status-pill status-pending">Estimate</span>
+            </div>
+            <div class="salary-breakdown">
+              <p><span>Hours worked</span><b id="salary-hours-worked">0h</b></p>
+              <p><span>Hourly rate</span><b id="salary-hourly-rate">&#8369;68.18</b></p>
+              <p><span>Earned basic pay</span><b id="salary-earned-basic">&#8369;0.00</b></p>
+              <p><span>Approved advances</span><b id="salary-advance-deduction" class="amount-negative">&#8369;0.00</b>
+              </p>
+              <p class="salary-total"><span>Estimated net pay</span><b id="salary-estimated-net">&#8369;0.00</b></p>
+            </div>
+            <p class="data-note">Estimate uses completed time-in and time-out records. Contact your admin for your
+              official payslip.</p>
+          </article>
+          <article class="panel request-panel">
+            <div class="panel-title">
+              <div>
+                <h2>Request a salary advance</h2>
+                <p>Need help before payday?</p>
+              </div>
+            </div>
+            <p>Submit a request for admin review. Its status will appear here once it has been processed.</p>
+            <label class="request-label" for="advance-amount">Requested amount</label>
+            <div class="currency-input"><span>₱</span><input id="advance-amount" type="number" min="1" max="12000"
+                placeholder="e.g. 2000"></div>
+            <label class="request-label" for="advance-reason">Reason</label><textarea id="advance-reason" rows="3"
+              placeholder="Enter a brief reason"></textarea>
+            <button class="button full" id="request-advance" type="button">Submit request</button>
+            <div class="request-status" id="staff-request-status"><span>No request yet.</span></div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>

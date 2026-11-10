@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07583b">
+  <title>Integrain | Jun &amp; Bebot's Rice Retailer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/styles.css">
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/staff.css">
+</head>
+
+<body>
+
+  <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon-dashboard" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="8" height="8" rx="1.5" />
+      <rect x="13" y="3" width="8" height="5" rx="1.5" />
+      <rect x="13" y="10" width="8" height="11" rx="1.5" />
+      <rect x="3" y="13" width="8" height="8" rx="1.5" />
+    </symbol>
+    <symbol id="icon-transactions" viewBox="0 0 24 24">
+      <path d="M7 7h13l-3-3m3 3-3 3M17 17H4l3 3m-3-3 3-3" />
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="15" rx="2" />
+      <path d="M3 9h18m-5 5h2M7 5V3h11" />
+    </symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24">
+      <path d="M4 7h10m4 0h2M4 17h2m4 0h10" />
+      <circle cx="16" cy="7" r="2" />
+      <circle cx="8" cy="17" r="2" />
+    </symbol>
+    <symbol id="icon-logout" viewBox="0 0 24 24">
+      <path d="M10 17l5-5-5-5m5 5H3m9-9h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7" />
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <path
+        d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m6-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6-7a4 4 0 0 1 0 8m2 3a4 4 0 0 1 3 4v2" />
+    </symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24">
+      <path d="m12 3 9 5-9 5-9-5 9-5Zm-9 5v9l9 5 9-5V8m-9 5v9" />
+    </symbol>
+    <symbol id="icon-applicants" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="4" />
+      <path d="M3 21v-2a6 6 0 0 1 12 0v2m3-13v6m-3-3h6" />
+    </symbol>
+    <symbol id="icon-report" viewBox="0 0 24 24">
+      <path d="M4 20V10m6 10V4m6 16v-7m6 7V7" />
+    </symbol>
+  </svg>
+
+  <nav class="top-nav" aria-label="Main navigation">
+    <div class="nav-left">
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+      <div class="nav-links">
+        <a class="nav-link active" href="#home" data-page="home">Home</a>
+        <a class="nav-link" href="#products" data-page="products">Products</a>
+        <button class="login-nav" data-login="staff">Login</button>
+      </div>
+    </div>
+    <div class="nav-branding">
+      <a class="brand" href="#home" aria-label="Jun and Bebot's home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false">
+            <path
+              d="M31 53V16m0 13c-8 0-13-5-14-12 8 0 13 4 14 12Zm0 8c8 0 13-5 14-12-8 0-13 4-14 12Zm0-20c-6-1-9-5-9-11 6 1 9 5 9 11Zm0-5c6-2 9-6 8-12-6 2-9 6-8 12ZM21 54h22" />
+          </svg></span>
+        <span class="brand-name">Jun &amp; Bebot's<small>RICE RETAILER</small></span>
+        <span class="brand-divider"></span>
+        <span class="product-name">Integrain<small>Integrated Rice Retail Credit and Payroll Management
+            System</small></span>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <main>
+    <section class="page active" id="home-page" data-view="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Good food starts with good rice</span>
+          <h1>Jun &amp; Bebot's<br><em>Bigasan</em></h1>
+          <p>Quality rice. Affordable prices.<br>For every Filipino family.</p>
+          <a class="button button-light" href="#products" data-page="products">Explore our rice <span>&#8594;</span></a>
+        </div>
+        <div class="hero-image" role="img" aria-label="Rice sacks and golden rice fields"></div>
+
+      </section>
+      <section class="benefits" aria-label="Why shop with us">
+        <article class="benefit"><span class="benefit-icon">&#10047;</span>
+          <h3>Quality products</h3>
+          <p>Fresh, carefully selected rice varieties.</p>
+        </article>
+        <article class="benefit"><span class="benefit-icon">&#10022;</span>
+          <h3>Affordable prices</h3>
+          <p>Best value for your family budget.</p>
+        </article>
+        <article class="benefit"><span class="benefit-icon">&#9829;</span>
+          <h3>Trusted community</h3>
+          <p>Serving our neighbors with care.</p>
+        </article>
+      </section>
+      <section class="section-head" id="products">
+        <div><span class="eyebrow">From our store to your table</span>
+          <h2>Our Products</h2>
+        </div><button class="text-button" data-page="products">View all products &#8594;</button>
+      </section>
+      <div class="product-grid" id="home-products"></div>
+      <section class="join-banner">
+        <div><span class="eyebrow">Grow with our team</span>
+          <h2>Be part of our family.</h2>
+          <p>We're always happy to meet hardworking people from our community.</p>
+        </div><button class="button" data-apply-start>Apply for a job <span>&#8594;</span></button>
+      </section>
+      <section class="store-location" aria-labelledby="store-location-title">
+        <div class="section-head">
+          <div><span class="eyebrow">Visit us</span>
+            <h2 id="store-location-title">Find our store</h2>
+          </div>
+        </div>
+        <div class="story-map rounded-5 shadow">
+          <iframe src="https://www.google.com/maps?q=14.038972,120.650472&amp;hl=en&amp;z=16&amp;output=embed"
+            title="Jun &amp; Bebot's Bigasan location on Google Maps" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="login-page" data-view="login">
+      <div class="login-wrap">
+        <div class="login-intro"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false">
+              <path
+                d="M31 53V16m0 13c-8 0-13-5-14-12 8 0 13 4 14 12Zm0 8c8 0 13-5 14-12-8 0-13 4-14 12Zm0-20c-6-1-9-5-9-11 6 1 9 5 9 11Zm0-5c6-2 9-6 8-12-6 2-9 6-8 12ZM21 54h22" />
+            </svg></span><span class="eyebrow">Integrain Portal</span>
+          <h1>Welcome back</h1>
+          <p>Sign in to your account. Integrain will open the dashboard assigned to your account.</p>
+          <div class="login-help">Demo accounts<br><b>admin@junbebot.com</b> · Admin<br><b>staff@junbebot.com</b> ·
+            Staff</div>
+        </div>
+        <form class="login-form" id="login-form"><span class="eyebrow">Secure sign in</span>
+          <h2>Sign in to your account</h2>
+          <p>Your account determines which dashboard you can access.</p><label>Email address<input type="email"
+              id="login-email" required placeholder="name@example.com" autocomplete="username"></label><label>Password
+            <div class="password-field"><input type="password" id="login-password" required
+                placeholder="Enter your password" autocomplete="current-password"><button type="button"
+                id="toggle-password" aria-label="Show password">Show</button></div>
+          </label><button class="button full" type="submit">Sign in <span>&#8594;</span></button>
+          <p class="login-error" id="login-error" role="alert"></p><button class="back-home" type="button"
+            data-page="home">&#8592; Back to home</button>
+        </form>
+      </div>
+    </section>
+
+    <div id="staff-view-container" aria-live="polite"></div>
+
+    <section class="page" id="admin-page" data-view="admin">
+      <div class="portal-shell">
+        <button class="sidebar-toggle" type="button" aria-label="Hide sidebar" aria-expanded="true">&#8249;</button>
+        <aside class="sidebar"><a class="side-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg
+                viewBox="0 0 64 64" focusable="false">
+                <path
+                  d="M31 53V16m0 13c-8 0-13-5-14-12 8 0 13 4 14 12Zm0 8c8 0 13-5 14-12-8 0-13 4-14 12Zm0-20c-6-1-9-5-9-11 6 1 9 5 9 11Zm0-5c6-2 9-6 8-12-6 2-9 6-8 12ZM21 54h22" />
+              </svg></span><span>Jun &amp;
+              Bebot's<small>RICE RETAILER</small></span></a>
+          <p class="side-label">ADMIN PORTAL</p>
+          <button class="side-link selected" data-admin="overview"><svg class="nav-icon">
+              <use href="#icon-dashboard" xlink:href="#icon-dashboard" />
+            </svg><span>Dashboard</span></button><button class="side-link" data-admin="employees"><svg class="nav-icon">
+              <use href="#icon-users" xlink:href="#icon-users" />
+            </svg><span>Employees</span></button><button class="side-link" data-admin="attendance"><svg
+              class="nav-icon">
+              <use href="#icon-clock" xlink:href="#icon-clock" />
+            </svg><span>Attendance</span></button><button class="side-link" data-admin="products"><svg class="nav-icon">
+              <use href="#icon-box" xlink:href="#icon-box" />
+            </svg>
+            <span>Add product</span></button><button class="side-link" data-admin="applicants"><svg class="nav-icon">
+              <use href="#icon-applicants" xlink:href="#icon-applicants" />
+            </svg>
+            <span>Applicants</span><i class="badge">3</i></button><button class="side-link" data-admin="salary"><svg
+              class="nav-icon">
+              <use href="#icon-wallet" xlink:href="#icon-wallet" />
+            </svg>
+            <span>Salary</span></button><button class="side-link" data-admin="reports"><svg class="nav-icon">
+              <use href="#icon-report" xlink:href="#icon-report" />
+            </svg>
+            <span>Reports</span></button>
+          <div class="account-menu" data-account-panel hidden>
+            <p class="account-email" data-account-email></p>
+            <button type="button" class="account-menu-item" data-settings-open><span
+                aria-hidden="true">⚙</span>Settings</button>
+            <button type="button" class="account-menu-item account-logout" data-logout><span
+                aria-hidden="true">↪</span>Log out</button>
+          </div>
+          <button class="sidebar-profile" type="button" data-account-toggle data-profile-role="admin"
+            aria-expanded="false"><span class="sidebar-avatar" data-profile-initials>SA</span><span
+              class="sidebar-user-copy"><strong data-profile-name>Store
+                Admin</strong><small data-profile-title>Administrator</small></span><span class="account-chevron"
+              aria-hidden="true">⌃</span></button>
+        </aside>
+        <div class="portal-content">
+          <div class="portal-heading">
+            <div><span class="eyebrow">Tuesday, October 4, 2026</span>
+              <h1 id="admin-heading">Dashboard</h1>
+              <p>Here's what's happening at your store today.</p>
+            </div><button class="avatar">JB</button>
+          </div>
+          <div id="admin-module-content" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="products-page" data-view="products">
+      <div class="inner-page"><span class="eyebrow">Fresh from our store</span>
+        <h1>Find your family's favorite</h1>
+        <p>Quality rice for every meal and every budget.</p>
+        <div class="filters"><button class="filter active" data-filter="All">All rice</button><button class="filter"
+            data-filter="Regular">Regular</button><button class="filter" data-filter="Well Milled">Well
+            milled</button><button class="filter" data-filter="Premium">Premium</button></div>
+        <div class="product-grid" id="all-products"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <section class="footer-about">
+        <a class="footer-brand" href="#home" data-page="home"><span>&#127806;</span> Jun &amp; Bebot&#8217;s</a>
+        <p>Quality rice for every Filipino family.</p>
+        <small>&copy; 2026 Integrain</small>
+      </section>
+      <section class="footer-column">
+        <h2>Explore</h2>
+        <a href="#products" data-page="products">Our rice products</a>
+        <button type="button" data-apply-start>Join our team</button>
+      </section>
+      <section class="footer-column">
+        <h2>Contact</h2>
+        <p>Questions about our rice or services?</p>
+        <button type="button" class="footer-chat-open">Chat with us</button>
+      </section>
+      <section class="footer-column">
+        <h2>Store hours</h2>
+        <p>Mon - Sun, 5:00 AM TO 5:00 PM</p>
+      </section>
+    </div>
+  </footer>
+  <div class="chat-launcher" id="chat-launcher">
+    <button class="chat-launcher-button" id="chat-open" type="button" aria-label="Open store chat"
+      aria-controls="chat-box" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-3.5 2 1.1-4A7.5 7.5 0 1 1 20 11.5Z" />
+        <path d="M8 11.5h.01M12 11.5h.01M16 11.5h.01" />
+      </svg>
+    </button>
+  </div>
+  <aside class="chat-box" id="chat-box" aria-label="Store assistant" aria-hidden="true">
+    <div class="chat-head">
+      <div><span>&#10022;</span><b>Store Assistant<small>Here to help you</small></b></div><button id="chat-close"
+        aria-label="Close chat">&#215;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-bubble bot">Hi there! Ask me about our rice, prices, store hours, or applying to join our
+        team.</div><button class="quick-question">What are your store hours?</button><button class="quick-question">Do
+        you have rice for cooking?</button><button class="quick-question apply-question" data-apply-start>Apply for a
+        job</button>
+    </div>
+    <form id="chat-form"><input id="chat-input" placeholder="Type your message..." aria-label="Message"><button
+        aria-label="Send message">&#10148;</button></form>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="settings-overlay" id="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"
+    hidden>
+    <form class="settings-panel" id="settings-form">
+      <div class="settings-heading">
+        <div><span class="eyebrow">Account preferences</span>
+          <h2 id="settings-title">Settings</h2>
+        </div><button type="button" class="settings-close" data-settings-close
+          aria-label="Close settings">&#215;</button>
+      </div>
+      <section class="settings-group">
+        <h3>Profile</h3>
+        <label>Display name<input id="settings-display-name" name="displayName" maxlength="60" required></label>
+        <div class="settings-readonly-grid">
+          <p><span>Email</span><strong id="settings-email"></strong></p>
+          <p><span>Role</span><strong id="settings-role"></strong></p>
+        </div>
+      </section>
+      <section class="settings-group">
+        <h3>Preferences</h3>
+        <label>Time format<select id="settings-time-format" name="timeFormat">
+            <option value="12-hour">12-hour clock</option>
+            <option value="24-hour">24-hour clock</option>
+          </select></label>
+        <label class="settings-check"><input id="settings-attendance-reminders" type="checkbox"><span>Attendance
+            reminders</span></label>
+        <label class="settings-check"><input id="settings-payroll-updates" type="checkbox"><span>Salary and advance
+            updates</span></label>
+      </section>
+      <div class="settings-actions"><span id="settings-saved" role="status"></span><button class="button"
+          type="submit">Save settings</button></div>
+    </form>
+  </div>
+  <script src="../public/js/products.js" defer></script>
+  <script src="../public/js/chatController.js" defer></script>
+  <script src="../public/js/admin/controller.js" defer></script>
+  <script src="../public/js/staff/loadView.js" defer></script>
+  <script src="../public/js/staff/controller.js" defer></script>
+  <script src="../public/js/appController.js" defer></script>
+</body>
+
+</html>

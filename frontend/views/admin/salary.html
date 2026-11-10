@@ -1,0 +1,51 @@
+<section class="salary-admin">
+  <div class="stats-grid salary-admin-stats" id="salary-admin-stats"></div>
+
+  <section class="panel salary-section">
+    <div class="panel-title">
+      <div>
+        <h2>Salary advance requests</h2>
+        <p>Review staff requests and approve or reject them.</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="salary-table">
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Request date</th>
+            <th>Amount</th>
+            <th>Reason</th>
+            <th>Status / action</th>
+          </tr>
+        </thead>
+        <tbody id="salary-request-list"></tbody>
+      </table>
+    </div>
+    <p class="salary-empty" id="salary-request-empty" hidden>No pending salary advance requests.</p>
+  </section>
+
+  <section class="panel salary-section">
+    <div class="panel-title">
+      <div>
+        <h2>Employee payroll</h2>
+        <p>Monthly salary, approved advances, at natitirang payout.</p>
+      </div><span class="salary-month" id="salary-month"></span>
+    </div>
+    <div class="table-wrap">
+      <table class="salary-table">
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Salary + allowance</th>
+            <th>Approved advance</th>
+            <th>Remaining pay</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="salary-payroll-list"></tbody>
+      </table>
+    </div>
+  </section>
+</section>
